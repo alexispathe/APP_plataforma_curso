@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- AIzaSyA_gUbnFr-iI_5Mj90o5LnfxPZX5Hs_ECo -->
+
+    <script>
+      const canal = "UCGmdxSvMG8cGJXwifpiJFtA";
+      const key = "AIzaSyB4YAWtDV6VhlwY1wR-cthG43kTQdmtt10";
+
+      // const url = `https://youtube.googleapis.com/youtube/v3/playlistItems?id=${canal}&key=${key}`;
+      const getYoutubeVideos = async () => {
+        const url = `https://www.googleapis.com/youtube/v3/search?order=date&part=snippet&channelId=${canal}&key=${key}`;
+        fetch(url, {
+          method: "GET",
+          Accept: "application/json",
+          mode: "cors",
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            console.log(data.items);
+          }).catch(err=> console.log(err));
+      };
+      getYoutubeVideos();
+    </script>
+  </body>
+</html>
