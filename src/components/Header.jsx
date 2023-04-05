@@ -4,7 +4,8 @@ import { categoriesDB } from "../assets/db/categoriesDB";
 import { Link } from "react-router-dom";
 import "../assets/styles/header.css";
 import {Spinner} from 'react-bootstrap';
-import {IoIosArrowDown} from 'react-icons/io'
+import {IoIosArrowDown} from 'react-icons/io';
+import {FaBars} from 'react-icons/fa';
 export const Header = () => {
   const [sections, setSections] = useState([]);
   const [categories, setCategories] = useState([]);
@@ -12,9 +13,26 @@ export const Header = () => {
     setSections(sectionsDB);
     setCategories(categoriesDB);
   }, []);
+ 
+  const onBarsClick=()=>{
+    /*  
+        Cuando el usuario le de click al menu, este desaparecera y hara el menu oculto aparezca
+        Esta funcion solo se ejecutara cuando el ancho de pantalla sea <=1000px
+    */ 
+    document.querySelector('.bars-container').style.display = "none";
+    document.querySelector('.header-container').style.display = "block";
+  }
+  const onClouseClick=()=>{
+
+    
+  }
   return (
     <>
+     <div className="bars-container" onClick={()=>onBarsClick()}>
+            <FaBars/>
+        </div>
       <div className="header-container">
+       
         <div className="header">
           <div className="header-top">
             <div className="header-logo">

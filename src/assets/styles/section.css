@@ -1,0 +1,19 @@
+.section-container{
+    max-width: 100%;
+}
+.section{
+    width: 75%;
+    /* background-color: red; */
+}
+/* ESTILOS DEL RESPONSIVE */
+@media (max-width: 1200px){
+    .section{
+        width: 70%;
+    }
+}
+@media (max-width: 1000px){
+    /* EN SECTION AMPLIAMOS AL 100% EL ANCHO */
+    .section{
+        width: 100%;
+    }
+}

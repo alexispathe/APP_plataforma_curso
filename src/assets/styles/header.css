@@ -1,13 +1,28 @@
 @import url('./globalVariables.css');
-
+/* BARS ICON */
+.bars-container{
+    display: none;
+    margin-top: 15px;
+    margin-left: 20px;
+    font-size: 40px;
+    cursor: pointer;
+    position: fixed;
+}
+.bars-container svg:hover{
+    color: var(--bg-primary);
+    transition-duration: 0.5s;
+}
+/* FIN BARS ICON */
 .header-container{
-    max-width: 400px;
+    width: 25%;
     height: 100vh;
     background-color:  var(--bg-primary);
+    padding: 20px 0px;
+
 }
 .header{
-    width: 100%;
-    padding: 20px 30px ;
+    /* width: 25%;
+    height: 100vh; */
 }
 .header-top .header-logo {
     width: 100%;
@@ -45,3 +60,23 @@
 /* Fin de los estilos del sub menu */
 
 /* Fin de los estilos */
+
+/* AQUI ESTAN LOS ESTILOS PARA EL RESPONSIVE */
+@media (max-width: 1200px) {
+    .header-container{
+        width: 30%;
+    }
+}
+@media (max-width: 1000px) {
+    /* OCULTAMOS EL HEADER */
+    .header-container{
+        width: 40%;
+        display: none;
+    }
+    /* MOSTRAMOS EL ICONO DE BARS */
+    .bars-container{
+        display: block;
+    }
+    /* FIN */
+}
+/*  */
