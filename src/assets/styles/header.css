@@ -13,11 +13,23 @@
     transition-duration: 0.5s;
 }
 /* FIN BARS ICON */
+/* CLOSE ICON */
+.close-container{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 50px;
+    color: white;
+}
+
+/* FIN CLOSE ICON */
 .header-container{
     width: 25%;
     height: 100vh;
     background-color:  var(--bg-primary);
     padding: 20px 0px;
+    position: fixed;
 
 }
 .header{
@@ -71,10 +83,16 @@
     /* OCULTAMOS EL HEADER */
     .header-container{
         width: 40%;
-        display: none;
+        margin-left: -40%;
+        transition-duration: 0.5s;
     }
     /* MOSTRAMOS EL ICONO DE BARS */
     .bars-container{
+        display: block;
+    }
+    /* FIN */
+    /* Mostrar el ICONO DE CLOSE */
+    .close-container{
         display: block;
     }
     /* FIN */

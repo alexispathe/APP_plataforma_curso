@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import "../assets/styles/header.css";
 import {Spinner} from 'react-bootstrap';
 import {IoIosArrowDown} from 'react-icons/io';
-import {FaBars} from 'react-icons/fa';
 export const Header = () => {
   const [sections, setSections] = useState([]);
   const [categories, setCategories] = useState([]);
@@ -20,21 +19,27 @@ export const Header = () => {
         Esta funcion solo se ejecutara cuando el ancho de pantalla sea <=1000px
     */ 
     document.querySelector('.bars-container').style.display = "none";
-    document.querySelector('.header-container').style.display = "block";
+    document.querySelector('.header-container').style.marginLeft = "0px";
   }
-  const onClouseClick=()=>{
-
+  const onCloseClick=()=>{
+    // Cuando el usuario le de click, se ocultara el menu
+    document.querySelector('.bars-container').style.display = "block";
+    document.querySelector('.header-container').style.marginLeft = "-100%";
     
   }
   return (
     <>
-     <div className="bars-container" onClick={()=>onBarsClick()}>
-            <FaBars/>
+     <div className="bars-container" onClick={onBarsClick}>
+            &#9776;
         </div>
       <div className="header-container">
-       
+     
         <div className="header">
+        <div className="close-container" onClick={onCloseClick}>
+                &times;
+            </div>
           <div className="header-top">
+           
             <div className="header-logo">
               <Link to="/">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/934px-Twitter-logo.svg.png" />
