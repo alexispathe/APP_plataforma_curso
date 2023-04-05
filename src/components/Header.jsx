@@ -42,7 +42,7 @@ export const Header = () => {
            
             <div className="header-logo">
               <Link to="/">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/934px-Twitter-logo.svg.png" />
+                <img src="https://w7.pngwing.com/pngs/403/269/png-transparent-react-react-native-logos-brands-in-colors-icon.png" />
               </Link>
             </div>
 
@@ -53,12 +53,12 @@ export const Header = () => {
                     {//Aqui estamos devolviendo todas las secciones de nuestra base de datos
                     sections.map((section, i) => (
                       <li className="header-section-item" key={section.sectionID || i}>
-                        <Link to={"/seccion/"+section.sectionURL} className="header-section-item-a">{section.name} <IoIosArrowDown/></Link>
+                        <Link to={"/seccion/"+section.sectionURL} >{section.name} <IoIosArrowDown/></Link>
                         <ul className="h-s-sub-item-container" >
                             {categories.length >=1? //Aqui estamos devolviendo todas categorias de BD para luego compararlos mediante su 'sectionID' y hacer una relacion 
                                 categories.map((category, j)=>(
                                     category.sectionID ===  section.sectionID ? 
-                                    <li className="h-s-sub-item" key={category.categoryID || j}><Link to={"/seccion/"+ section.sectionURL+ "/"+category.categoryURL}>{category.name}</Link></li>
+                                    <li className="h-s-sub-item" key={category.categoryID || j}><Link to={"/seccion/"+ section.sectionURL+ "/"+category.categoryURL}><i className={category.iconName} style={{"margin-right": 5}} ></i>{category.name}</Link></li>
                                     :''
                                 )):<div className="text-center"><Spinner animation="border" className="text-white" /></div>
 

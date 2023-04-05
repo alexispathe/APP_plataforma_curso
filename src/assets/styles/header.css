@@ -8,9 +8,9 @@
     cursor: pointer;
     position: fixed;
 }
-.bars-container svg:hover{
+.bars-container:hover{
     color: var(--bg-primary);
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
 }
 /* FIN BARS ICON */
 /* CLOSE ICON */
@@ -21,6 +21,11 @@
     right: 20px;
     font-size: 50px;
     color: white;
+    cursor: pointer;
+}
+.close-container:hover{
+    color: var(--bg-selected);
+    transition-duration: 0.3s;
 }
 
 /* FIN CLOSE ICON */
@@ -55,7 +60,7 @@
     list-style: none;
     padding: 5px 0px ;
 }
-.header-section-item-a{
+.header-section-item a{
     text-decoration: none;
     font-size: var(--fz-sub-title);
     color: white;
@@ -68,6 +73,9 @@
     color: white;
     text-decoration: none;
     font-size: var(--fz-medium) ;
+}
+.h-s-sub-item a:hover{
+    color: var(--bg-selected);
 }
 /* Fin de los estilos del sub menu */
 
@@ -82,8 +90,8 @@
 @media (max-width: 1000px) {
     /* OCULTAMOS EL HEADER */
     .header-container{
-        width: 40%;
-        margin-left: -40%;
+        width: 400px;
+        margin-left: -100%;
         transition-duration: 0.5s;
     }
     /* MOSTRAMOS EL ICONO DE BARS */
