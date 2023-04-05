@@ -1,0 +1,47 @@
+@import url('./globalVariables.css');
+
+.header-container{
+    max-width: 400px;
+    height: 100vh;
+    background-color:  var(--bg-primary);
+}
+.header{
+    width: 100%;
+    padding: 20px 30px ;
+}
+.header-top .header-logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.header-top .header-logo img{
+    width: 50px;
+}
+
+/* Estilos del apartado de la seccion */
+.header-section-container{
+    width: 100%;
+    margin-top: 25px;
+}
+.header-section-container li{
+    list-style: none;
+    padding: 5px 0px ;
+}
+.header-section-item-a{
+    text-decoration: none;
+    font-size: var(--fz-sub-title);
+    color: white;
+}
+/* Estilos del sub menu */
+.h-s-sub-item-container{
+    padding-left: 10px;
+}
+.h-s-sub-item a{
+    color: white;
+    text-decoration: none;
+    font-size: var(--fz-medium) ;
+}
+/* Fin de los estilos del sub menu */
+
+/* Fin de los estilos */

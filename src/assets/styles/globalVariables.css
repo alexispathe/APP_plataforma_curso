@@ -1,0 +1,8 @@
+:root{
+    --bg-primary: rgb(0, 98, 245);
+    --bg-white: rgb(240, 240, 240);
+
+    --fz-title: 26px;
+    --fz-sub-title: 22px;
+    --fz-medium: 18px;
+}
