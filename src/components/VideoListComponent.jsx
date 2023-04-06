@@ -1,3 +1,5 @@
+/*---------ESTE ES EL COMPONENTE PADRE PARA LOS VIDEOS, ES DECIR QUE AQUI DEBEOS DE PASAR LA LISTA DE TODOS LOS VIDEOS QUE VAMOS A RENDERIZAR------ */ 
+
 import { useEffect,useState } from "react";
 import { VideoComponent } from "./VideoComponent"; //Component que nos servira como render para cada video devuelto
 import { Spinner } from "react-bootstrap";

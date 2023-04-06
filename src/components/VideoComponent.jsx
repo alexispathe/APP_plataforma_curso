@@ -1,5 +1,5 @@
 /*
-    -----------ESTE COMPONENTE SIRVE PARA RENDERIZAR UN VIDEO DE UN CANAL DE YOUTUBE----------
+    -----------ESTE COMPONENTE SIRVE PARA RENDERIZAR CADA VIDEO QUE SE LE MANDE----------
 */
 import "../assets/styles/VideoComponent.css";
 import { useEffect, useState } from "react";
