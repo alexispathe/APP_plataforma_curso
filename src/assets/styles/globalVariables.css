@@ -1,9 +1,17 @@
 :root{
-    --bg-primary: rgb(0, 98, 245);
-    --bg-white: rgb(240, 240, 240);
+    /* Colores de fondo */
+    --bg-primary: rgb(8, 60, 202);
     --bg-selected: rgb(255, 217, 0);
-
+    /* Color de textos */
+    --t-default-color: white;
+    
+    /* Tamaños de fuente */
     --fz-title: 26px;
     --fz-sub-title: 22px;
-    --fz-medium: 18px;
+    --fz-p: 20px;
+    --fz-section: 22px;
+    --fz-category: 18px;
+    
+    /*Ancho del header*/
+    --w-header: 400px; 
 }

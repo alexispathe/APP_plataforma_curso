@@ -7,9 +7,15 @@
     font-size: 40px;
     cursor: pointer;
     position: fixed;
+    background-color: var(--bg-primary);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 90;
+    transition-duration: .3s;
 }
 .bars-container:hover{
-    color: var(--bg-primary);
+    color: var(--bg-selected);
     transition-duration: 0.3s;
 }
 /* FIN BARS ICON */
@@ -30,17 +36,16 @@
 
 /* FIN CLOSE ICON */
 .header-container{
-    width: 25%;
+    width: var(--w-header);
     height: 100vh;
     background-color:  var(--bg-primary);
     padding: 20px 0px;
     position: fixed;
+    float: left;
+    z-index: 100;
 
 }
-.header{
-    /* width: 25%;
-    height: 100vh; */
-}
+
 .header-top .header-logo {
     width: 100%;
     display: flex;
@@ -62,17 +67,17 @@
 }
 .header-section-item a{
     text-decoration: none;
-    font-size: var(--fz-sub-title);
-    color: white;
+    font-size: var(--fz-section);
+    color: var(--t-default-color);
 }
 /* Estilos del sub menu */
 .h-s-sub-item-container{
     padding-left: 10px;
 }
 .h-s-sub-item a{
-    color: white;
+    color: var(--t-default-color);
     text-decoration: none;
-    font-size: var(--fz-medium) ;
+    font-size: var(--fz-category) ;
 }
 .h-s-sub-item a:hover{
     color: var(--bg-selected);
@@ -83,14 +88,11 @@
 
 /* AQUI ESTAN LOS ESTILOS PARA EL RESPONSIVE */
 @media (max-width: 1200px) {
-    .header-container{
-        width: 30%;
-    }
+   
 }
 @media (max-width: 1000px) {
     /* OCULTAMOS EL HEADER */
     .header-container{
-        width: 400px;
         margin-left: -100%;
         transition-duration: 0.5s;
     }
