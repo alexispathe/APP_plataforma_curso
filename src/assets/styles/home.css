@@ -1,6 +1,6 @@
 @import url('./globalVariables.css');
 .home-container{
-    width: calc(100% - 400px);
+    width: calc(100% - var(--w-header));
     float: right;
     padding: 10px 20px;
     z-index: 10;

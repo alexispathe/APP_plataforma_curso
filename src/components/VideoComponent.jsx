@@ -4,7 +4,7 @@
 import "../assets/styles/VideoComponent.css";
 import { useEffect, useState } from "react";
 import { Spinner } from "react-bootstrap";
-export const VideoComponent = ({data}) => {
+export const VideoComponent = ({ data }) => {
   const [idVideo, setIdVideo] = useState("");
   useEffect(() => {
     formatVideoURL();
@@ -12,23 +12,31 @@ export const VideoComponent = ({data}) => {
   const formatVideoURL = () => {
     /*Dentro de esta funcion formatearemos la url del video de youtube para sacar solo el ID*/
     setIdVideo(data.url.split("?v=")[1]);
-    
   };
   return (
     <>
-    <h1>{data.title}</h1>
       {idVideo && idVideo.length >= 1 ? (
-        <div className="video-responsive">
-          <iframe
-            width="853"
-            height="480"
-            src={`https://www.youtube.com/embed/${idVideo}`}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            title="Embedded youtube"
-          />
+        <div>
+          <div className="video-responsive">
+            <iframe
+              width="570" 
+              height="315"
+              src={`https://www.youtube.com/embed/${idVideo}?rel=0`}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              title={data.title}
+             
+            />
+          </div>
+          <div className="text-center">
+            <p>{data.title}</p>
+          </div>
         </div>
-      ) : <div className="w-100 text-center"><Spinner animation="grow"/></div>}
+      ) : (
+        <div className="w-100 text-center">
+          <Spinner animation="grow" />
+        </div>
+      )}
     </>
   );
 };
