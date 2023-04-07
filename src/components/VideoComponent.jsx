@@ -8,6 +8,7 @@ export const VideoComponent = ({data}) => {
   const [idVideo, setIdVideo] = useState("");
   useEffect(() => {
     formatVideoURL();
+    console.log("VIDEOOOOOOOOOOOOO")
   }, []);
   const formatVideoURL = () => {
     /*Dentro de esta funcion formatearemos la url del video de youtube para sacar solo el ID*/
@@ -16,7 +17,7 @@ export const VideoComponent = ({data}) => {
   };
   return (
     <>
-      {idVideo && idVideo.length >= 10 ? (
+      {idVideo && idVideo.length >= 1 ? (
         <div className="video-responsive">
           <iframe
             width="853"

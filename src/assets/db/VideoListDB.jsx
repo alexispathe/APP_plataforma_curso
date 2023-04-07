@@ -1,7 +1,7 @@
 export const VideoListDB= [
     {
         title: 'Las mejores peleas del anime', 
-        url: 'https://www.youtube.com/watch?v=UrDx3ZcPaf0',
+        url: 'https://www.youtube.com/watch?v=v_zZmsFZDaM&list=RDMM&start_radio=1&rv=9wz2WWgv9Fs',
         videoInformation:{
             categoryID: '',
             subCategory: '',
