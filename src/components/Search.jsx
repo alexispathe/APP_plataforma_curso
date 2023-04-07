@@ -2,7 +2,7 @@
 import { useContext, useState } from "react";
 import { Form } from "react-bootstrap";
 import { VideosContext } from "../contexts/VideosProvider";
-import { VideoListComponent } from "./videoComponents/VideoListComponent";
+import { VideoContainerComponent } from "./videoComponents/VideoContainerComponent";
 
 export const Search = () => {
   /* IMPORTAMOS EL CONTEXTO Y LO PASAMOS EN USECONTEXT */
@@ -35,7 +35,7 @@ export const Search = () => {
         {videoList && videoList.length >= 1 ? (
             <div>
                 <p className="text-success pt-2">Se encontraron {videoList.length} resultados</p>
-                <VideoListComponent videoList={videoList} sm={12} md={6} lg={4} /> {/*sm, md, lg = tamaño de la grid en bootstrap*/}
+                <VideoContainerComponent videoList={videoList} sm={12} md={6} lg={4} /> {/*sm, md, lg = tamaño de la grid en bootstrap*/}
             </div>
         ) : (
             <p className="text-danger pt-2">No se encontro ningun resultado</p>

@@ -16,6 +16,6 @@ export const componentPaths = [
     },
     {
         element: <VideoPlayerComponent/>,
-        path: '/reproduciendo/:curso/:id'
+        path: '/reproduciendo/:section/:title'
     }
 ];

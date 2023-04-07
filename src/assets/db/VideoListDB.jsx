@@ -4,20 +4,20 @@ export const VideoListDB= [
         url: 'https://www.youtube.com/watch?v=v_zZmsFZDaM&list=RDMM&start_radio=1&rv=9wz2WWgv9Fs',
         videoURL: 'la-mejores',
         videoInformation:{
-            sectionID: '',
-            courseID: 'curso',
+            categoryID: 'programacion',
+            sectionID: 'base-de-datos-123',
             creationDate: '',
             authorID: '',
         }
 
     },
     {
-        title: 'Changa', 
+        title: 'La violencia digital', 
         url: 'https://www.youtube.com/watch?v=FlfHCsIiRKo',
-        videoURL: 'chan-ga',
+        videoURL: 'la-violencia-digital',
         videoInformation:{
-            sectionID: '',
-            courseID: 'curso',
+            categoryID: 'conferencias',
+            sectionID: 'la-violencia',
             creationDate: '',
             authorID: '',
         }
@@ -28,8 +28,8 @@ export const VideoListDB= [
         url: 'https://www.youtube.com/watch?v=rPF_dL339F4',
         videoURL: 'mi-corazon',
         videoInformation:{
-            sectionID: '',
-            courseID: 'curso',
+            categoryID: 'programacion',
+            sectionID: 'base-de-datos-123',
             creationDate: '',
             authorID: '',
         }

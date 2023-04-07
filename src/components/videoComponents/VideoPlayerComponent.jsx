@@ -1,16 +1,13 @@
-import { useEffect,useContext } from "react";
-import { VideosContext } from "../../contexts/VideosProvider";
+/*-----ESTE COMPONENTE SERVIRA PARA ALBERGAR EL COMPONENTE PARA REPRODUCIR EL VIDEO Y MOSTRAR LA LISTA DE TODOS LOS VIDEOS DE ESE CURSO*/ 
+import { useParams } from "react-router-dom"; //con esta funcion capturaremos los parametros que hay en la url, en este caso es :curso, :id
+import { VideoListComponent } from "./VideoListComponent";
 export const VideoPlayerComponent = () => {
-    const [videoList, setVideoList] = useContext(VideosContext);
-    useEffect(()=>{
+    const {section, title} = useParams(); 
 
-    },[]); 
-    const searchVideo=()=>{
-        /*En esta funcion vamos a buscar el video que el usuario va a reproducir*/ 
-    }
   return (
     <div className="video-player-component">
       <h1 className="video-title"></h1>
+      <VideoListComponent section={section}/>
     </div>
   );
 };

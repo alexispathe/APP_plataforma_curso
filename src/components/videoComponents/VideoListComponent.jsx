@@ -1,23 +1,19 @@
-/*---------ESTE ES EL COMPONENTE PADRE PARA LOS VIDEOS, ES DECIR QUE AQUI DEBEOS DE PASAR LA LISTA DE TODOS LOS VIDEOS QUE VAMOS A RENDERIZAR------ */
-import { VideoComponent } from "./VideoComponent"; //Component que nos servira como render para cada video devuelto
-import { Spinner } from "react-bootstrap";
-import { Row, Col } from "react-bootstrap"; //Importamos estas librerias para trabajar con la "GRID" de bootstrap"
-export const VideoListComponent = ({ videoList,sm,md,lg }) => {
-  return (
-    <Row>
-      {
-        videoList && videoList.length >= 1 ? (
-          videoList.map((video, i) => (
-            <Col sm={sm} md={md} lg={lg} key={i} >
-              <VideoComponent data={video} />
-            </Col>
-          ))
-        ) : (
-          <div className="w-100 text-center">
-            <Spinner variant="primary" />
-          </div>
-        ) //El Spinner  se ejecuta cuando  los videos aun no se devuelven
-      }
-    </Row>
-  );
-};
+/*--------------ESTE COMPONENTE SIRVE PARA MOSTRAR LA LISTA DE LOS VIDEOS DE UN CURSO O SECCION--------------*/ 
+import { useEffect,useContext, useState } from "react";
+import { VideosContext } from "../../contexts/VideosProvider";
+export const VideoListComponent =({section})=>{
+    const [videoList, setVideoList] = useContext(VideosContext);
+    const [list, setList] = useState([]); //Aqui almacenaremos la lista de videos que coencidan con el curso o seccion
+    useEffect(()=>{
+        searchVideo(section);
+    },[]); 
+    const searchVideo=(section)=>{
+        /*En esta funcion vamos a buscar el video que el usuario va a reproducir*/ 
+        setList([...videoList.filter(video => video.videoInformation.sectionID === section)]);
+    }
+    return (
+        <div>
+
+        </div>
+    );
+}
