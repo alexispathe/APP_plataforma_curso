@@ -1,9 +1,10 @@
 /*
     -----------ESTE COMPONENTE SIRVE PARA RENDERIZAR CADA VIDEO QUE SE LE MANDE----------
 */
-import "../assets/styles/VideoComponent.css";
+import "../../assets/styles/VideoComponent.css";
 import { useEffect, useState } from "react";
 import { Spinner } from "react-bootstrap";
+import { Link } from "react-router-dom";
 export const VideoComponent = ({ data }) => {
   const [idVideo, setIdVideo] = useState("");
   useEffect(() => {
@@ -25,11 +26,10 @@ export const VideoComponent = ({ data }) => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               title={data.title}
-             
             />
           </div>
           <div className="text-center">
-            <p>{data.title}</p>
+            <Link to={"/reproduciendo/"+data.videoInformation.courseID+"/"+data.videoURL}>{data.title}</Link>
           </div>
         </div>
       ) : (

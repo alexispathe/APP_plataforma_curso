@@ -2,7 +2,7 @@
 import { useContext, useState } from "react";
 import { Form } from "react-bootstrap";
 import { VideosContext } from "../contexts/VideosProvider";
-import { VideoListComponent } from "./VideoListComponent";
+import { VideoListComponent } from "./videoComponents/VideoListComponent";
 
 export const Search = () => {
   /* IMPORTAMOS EL CONTEXTO Y LO PASAMOS EN USECONTEXT */

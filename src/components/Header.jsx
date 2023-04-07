@@ -58,7 +58,7 @@ export const Header = () => {
                             {categories.length >=1? //Aqui estamos devolviendo todas categorias de BD para luego compararlos mediante su 'sectionID' y hacer una relacion 
                                 categories.map((category, j)=>(
                                     category.sectionID ===  section.sectionID ? 
-                                    <li className="h-s-sub-item" key={category.categoryID || j}><Link to={"/seccion/"+ section.sectionURL+ "/"+category.categoryURL}><i className={category.iconName} style={{"margin-right": 5}} ></i>{category.name}</Link></li>
+                                    <li className="h-s-sub-item" key={category.categoryID || j}><Link to={"/seccion/"+ section.sectionURL+ "/"+category.categoryInformation.categoryURL}><i className={category.iconName} style={{"margin-right": 5}} ></i>{category.name}</Link></li>
                                     :''
                                 )):<div className="text-center"><Spinner animation="border" className="text-white" /></div>
 

@@ -1,3 +1,4 @@
+/*Una seccion es basicamente un apartado para la pagina*/ 
 export const sectionsDB =[
     {
         name: 'Conferencias',

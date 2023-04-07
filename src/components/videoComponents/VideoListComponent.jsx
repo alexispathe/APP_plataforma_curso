@@ -8,8 +8,8 @@ export const VideoListComponent = ({ videoList,sm,md,lg }) => {
       {
         videoList && videoList.length >= 1 ? (
           videoList.map((video, i) => (
-            <Col sm={sm} md={md} lg={lg}>
-              <VideoComponent key={i} data={video} />
+            <Col sm={sm} md={md} lg={lg} key={i} >
+              <VideoComponent data={video} />
             </Col>
           ))
         ) : (

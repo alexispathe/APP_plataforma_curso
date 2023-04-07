@@ -2,9 +2,10 @@ export const VideoListDB= [
     {
         title: 'Las mejores peleas del anime', 
         url: 'https://www.youtube.com/watch?v=v_zZmsFZDaM&list=RDMM&start_radio=1&rv=9wz2WWgv9Fs',
+        videoURL: 'la-mejores',
         videoInformation:{
-            categoryID: '',
-            subCategory: '',
+            sectionID: '',
+            courseID: 'curso',
             creationDate: '',
             authorID: '',
         }
@@ -13,9 +14,10 @@ export const VideoListDB= [
     {
         title: 'Changa', 
         url: 'https://www.youtube.com/watch?v=FlfHCsIiRKo',
+        videoURL: 'chan-ga',
         videoInformation:{
-            categoryID: '',
-            subCategory: '',
+            sectionID: '',
+            courseID: 'curso',
             creationDate: '',
             authorID: '',
         }
@@ -24,9 +26,10 @@ export const VideoListDB= [
     {
         title: 'Mi corazon encantado', 
         url: 'https://www.youtube.com/watch?v=rPF_dL339F4',
+        videoURL: 'mi-corazon',
         videoInformation:{
-            categoryID: '',
-            subCategory: '',
+            sectionID: '',
+            courseID: 'curso',
             creationDate: '',
             authorID: '',
         }

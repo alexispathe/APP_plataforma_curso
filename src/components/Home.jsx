@@ -1,5 +1,5 @@
 import '../assets/styles/home.css';
-import { VideoListComponent } from "./VideoListComponent";
+import { VideoListComponent } from "./videoComponents/VideoListComponent";
 import { Search } from './Search';
 export const Home =()=>{
     return(
