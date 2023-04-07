@@ -14,4 +14,6 @@
     
     /*Ancho del header*/
     --w-header: 300px; 
+    /* Ancho de la lista de videos cuando el usuario esta viendo un curso */
+    --w-video-list: 300px;
 }
