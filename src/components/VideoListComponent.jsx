@@ -2,7 +2,6 @@
 import { VideoComponent } from "./VideoComponent"; //Component que nos servira como render para cada video devuelto
 import { Spinner } from "react-bootstrap";
 export const VideoListComponent = ({videoList}) => {
-  console.log("Este es ", videoList)
   return (
     <div>
       {
