@@ -5,14 +5,17 @@ import "../../assets/styles/VideoComponent.css";
 import { useEffect, useState } from "react";
 import { Spinner } from "react-bootstrap";
 import { Link } from "react-router-dom";
-export const VideoComponent = ({ data  }) => {
+export const VideoComponent = ({ data, width  }) => {
   const [idVideo, setIdVideo] = useState("");
   useEffect(() => {
     formatVideoURL();
+    // console.log(data)
   }, [data]);
   const formatVideoURL = () => {
     /*Dentro de esta funcion formatearemos la url del video de youtube para sacar solo el ID*/
-    setIdVideo(data.url.split("?v=")[1]);
+    if(data.url){
+      setIdVideo(data.url.split("?v=")[1]);
+    }
   };
   return (
     <>
