@@ -5,7 +5,7 @@ import "../../assets/styles/VideoComponent.css";
 import { useEffect, useState } from "react";
 import { Spinner } from "react-bootstrap";
 import { Link } from "react-router-dom";
-export const VideoComponent = ({ data }) => {
+export const VideoComponent = ({ data  }) => {
   const [idVideo, setIdVideo] = useState("");
   useEffect(() => {
     formatVideoURL();

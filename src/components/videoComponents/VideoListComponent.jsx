@@ -1,9 +1,9 @@
 /*--------------ESTE COMPONENTE SIRVE PARA MOSTRAR LA LISTA DE LOS VIDEOS DE UN CURSO O SECCION--------------*/
 import { useEffect, useContext, useState } from "react";
 import { VideosContext } from "../../contexts/VideosProvider";
-import { Link, NavLink } from "react-router-dom";
+import {NavLink } from "react-router-dom"; //Con NavLink agreamos funcionalidades extras al hipervinculo
+import {Spinner} from 'react-bootstrap';
 import "../../assets/styles/VideoListComponent.css";
-import { ImPlay2 } from "react-icons/im";
 export const VideoListComponent = ({ section }) => {
   const [videoList, setVideoList] = useContext(VideosContext);
   const [list, setList] = useState([]); //Aqui almacenaremos la lista de videos que coencidan con el curso o seccion
@@ -22,7 +22,7 @@ export const VideoListComponent = ({ section }) => {
   return (
     <div className="video-list-container">
       <ul className="video-list">
-        {list.map((list, i) => (
+        {list && list.length>=1 ? list.map((list, i) => (
           <li key={list.videoURL || i}>
             <NavLink
               to={
@@ -38,7 +38,9 @@ export const VideoListComponent = ({ section }) => {
               {i + 1}. {list.title}
             </NavLink>
           </li>
-        ))}
+        )): <div className="w-100 mt-5 text-center text-primary">
+        <Spinner animation="border" />
+      </div>}
       </ul>
     </div>
   );
