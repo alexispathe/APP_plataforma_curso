@@ -33,7 +33,7 @@ export const VideoPlayerComponent = () => {
   return (
 
     <div className="video-player-container">
-      <VideoComponent data={video} width={"400px"}/>
+      <VideoComponent data={video} width={"video-and-list-menu"}/>
       <VideoListComponent videoListSection={videoListSection} />
     </div>
   );

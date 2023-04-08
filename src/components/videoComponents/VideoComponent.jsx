@@ -20,7 +20,7 @@ export const VideoComponent = ({ data, width  }) => {
   return (
     <>
       {idVideo && idVideo.length >= 1 ? (
-        <div>
+        <div className={width}>
           <div className="video-responsive">
             <iframe
               width="570" 
