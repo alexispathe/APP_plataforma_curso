@@ -1,6 +1,6 @@
 export const VideoListDB= [
     {
-        title: 'Las mejores peleas del anime', 
+        title: 'Base de datos relacionales usando JOIN en ORACLE PL/SQL', 
         url: 'https://www.youtube.com/watch?v=v_zZmsFZDaM&list=RDMM&start_radio=1&rv=9wz2WWgv9Fs',
         videoURL: 'la-mejores',
         videoInformation:{

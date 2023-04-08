@@ -6,7 +6,6 @@ export const VideoPlayerComponent = () => {
 
   return (
     <div className="video-player-component">
-      <h1 className="video-title"></h1>
       <VideoListComponent section={section}/>
     </div>
   );

@@ -29,7 +29,7 @@ export const VideoComponent = ({ data }) => {
             />
           </div>
           <div className="text-center">
-            <Link to={"/reproduciendo/"+data.videoInformation.sectionID+"/"+data.videoURL}>{data.title}</Link>
+            <Link to={"/reproduciendo/"+data.videoInformation.sectionID+"/"+data.videoURL} >{data.title}</Link>
           </div>
         </div>
       ) : (
