@@ -5,7 +5,8 @@ import {Spinner} from 'react-bootstrap';
 import "../../assets/styles/VideoListComponent.css";
 export const VideoListComponent = ({ videoListSection }) => {
   return (
-    <div className="video-list-container">
+    <>
+      <div className="video-list-container">
       <ul className="video-list">
         {videoListSection && videoListSection.length>=1 ? videoListSection.map((videoList, i) => (
           <li key={videoList.videoURL || i}>
@@ -28,5 +29,7 @@ export const VideoListComponent = ({ videoListSection }) => {
       </div>}
       </ul>
     </div>
+    </>
+    
   );
 };
