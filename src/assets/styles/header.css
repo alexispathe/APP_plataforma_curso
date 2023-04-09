@@ -3,14 +3,14 @@
 .bars-container{
     display: none;
     margin-top: 15px;
-    margin-left: 20px;
     font-size: 40px;
     cursor: pointer;
     position: fixed;
     background-color: var(--bg-primary);
     color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
+    padding: 0px 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     z-index: 90;
     transition-duration: .3s;
 }
