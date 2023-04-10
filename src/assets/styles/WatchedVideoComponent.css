@@ -1,0 +1,30 @@
+.watched-video-container{
+    width: 100%;
+    /* height: 100px; */
+    overflow: hidden;
+    background-color: rgba(231, 231, 231, 0.24);
+    position: fixed;
+    bottom: 0;
+    cursor: pointer;
+}
+.watched-video-container:hover{
+    filter: brightness(.9);
+    transition-duration: .4s;
+}
+.watched-video{
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    align-items: center;
+
+}
+.watched-video .video-image{
+    width: 100px;
+    height: 60px;
+}
+.watched-video .video-image img{
+    width: 100px;
+    height: 100%;
+}
