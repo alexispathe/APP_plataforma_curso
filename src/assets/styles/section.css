@@ -1,19 +1,36 @@
 .section-container{
-    max-width: 100%;
+    width: 100%;
+   
 }
 .section{
-    width: 75%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Estilos para cada apartado de la seccion */
+.section-item{
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
     /* background-color: red; */
+}
+.section-item .category-image{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+.section-item .category-image img{
+    width: 100%;
 }
 /* ESTILOS DEL RESPONSIVE */
 @media (max-width: 1200px){
-    .section{
+    /* .section{
         width: 70%;
-    }
+    } */
 }
 @media (max-width: 1000px){
     /* EN SECTION AMPLIAMOS AL 100% EL ANCHO */
-    .section{
+    /* .section{
         width: 100%;
-    }
+    } */
 }

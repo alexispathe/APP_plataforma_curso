@@ -18,18 +18,22 @@ export const Section = ({ categoryType }) => {
   };
   return (
     <div className="section-container">
-      <h1 className="text-center">Tecnologia </h1>
-
-      {categories && categories.length >= 1
-        ? categories.map((category) => (
-            <div className="section">
+        <h1 className="text-center">Tecnologia </h1>
+      <div className="section">
+        {categories && categories.length >= 1
+          ? categories.map((category) => (
+              <div className="section-item">
                 <div className="category-image">
-                    <img src={category.categoryInformation.image} alt={category.name}/>
+                  <img  
+                    src={category.categoryInformation.image}
+                    alt={category.name}
+                  />
                 </div>
-              <div className="category-title">{category.name}</div>
-            </div>
-          ))
-        : ""}
+                <div className="category-title">{category.name}</div>
+              </div>
+            ))
+          : ""}
+      </div>
     </div>
   );
 };
