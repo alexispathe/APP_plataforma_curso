@@ -20,6 +20,7 @@ export const Header = () => {
     */ 
     document.querySelector('.bars-container').style.display = "none";
     document.querySelector('.header-container').style.marginLeft = "0px";
+    document.querySelector('.close-container').style.display = "block";
   }
   const onCloseClick=()=>{
     // Cuando el usuario le de click, se ocultara el menu

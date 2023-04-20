@@ -1,7 +1,7 @@
 @import url('./globalVariables.css');
 /* BARS ICON */
 .bars-container{
-    display: none;
+    /* display: none; */
     margin-top: 15px;
     font-size: 40px;
     cursor: pointer;
@@ -43,6 +43,9 @@
     position: fixed;
     float: left;
     z-index: 100;
+    /* display: none; */
+    margin-left: -100%;
+    transition-duration: 0.5s;
 
 }
 
@@ -96,8 +99,8 @@
 @media (max-width: 1000px) {
     /* OCULTAMOS EL HEADER */
     .header-container{
-        margin-left: -100%;
-        transition-duration: 0.5s;
+        /* margin-left: -100%;
+        transition-duration: 0.5s; */
     }
     /* MOSTRAMOS EL ICONO DE BARS */
     .bars-container{
