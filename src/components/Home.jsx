@@ -1,7 +1,7 @@
 import '../assets/styles/home.css';
-import { VideoContainerComponent } from "./videoComponents/VideoContainerComponent";
 import { Search } from './Search';
 import { WatchedVideoComponent } from './videoComponents/WatchedVideoComponent';
+import { Section } from './sections/Section';
 import { useEffect, useState } from 'react';
 export const Home =()=>{
     const [status, setStatus] = useState(false);
@@ -17,7 +17,7 @@ export const Home =()=>{
     return(
         <div className="home-container">
             <Search/>
-            {/* <VideoListComponent/> */}
+            <Section categoryType="curso"/>
             {status? <WatchedVideoComponent/> :''}
             
         </div>

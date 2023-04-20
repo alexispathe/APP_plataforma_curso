@@ -3,10 +3,10 @@ import { componentPaths } from "./routes/componentPaths";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Header } from "./components/Header";
 import { VideosProvider } from "./contexts/VideosProvider"; //ESTAMOS IMPORANTO EL CONTEXTO PARA VIDEOS
-import { SectionsProvider } from "./contexts/SectionProvider";
+import { CategoryProvider } from "./contexts/CategoryProvider";
 function App() {
   return (
-    <SectionsProvider>
+    <CategoryProvider>
       <VideosProvider>
         <div className="App">
           <BrowserRouter>
@@ -23,7 +23,7 @@ function App() {
           </BrowserRouter>
         </div>
       </VideosProvider>
-    </SectionsProvider>
+    </CategoryProvider>
   );
 }
 
