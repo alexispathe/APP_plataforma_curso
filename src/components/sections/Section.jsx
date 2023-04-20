@@ -1,5 +1,6 @@
-import '../../assets/styles/section.css'
-export const Section=()=>{
+import '../../assets/styles/section.css';
+
+export const Section=({categoryType})=>{
     return(
         <div className="section-container">
             <div className='section'>

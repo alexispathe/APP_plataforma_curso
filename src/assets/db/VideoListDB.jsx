@@ -2,8 +2,8 @@ export const VideoListDB= [
    
     {
         title: 'Base de datos relacionales usando JOIN en ORACLE PL/SQL', 
-        url: 'https://www.youtube.com/watch?v=v_zZmsFZDaM&list=RDMM&start_radio=1&rv=9wz2WWgv9Fs',
-        videoURL: 'la-mejores',
+        url: 'https://www.youtube.com/watch?v=Z6dIdJX4ens',
+        videoURL: 'base-datos-relacionales',
         videoInformation:{
             categoryID: 'programacion',
             sectionID: 'base-de-datos-123',
@@ -14,7 +14,7 @@ export const VideoListDB= [
     },
     {
         title: 'La violencia digital', 
-        url: 'https://www.youtube.com/watch?v=FlfHCsIiRKo',
+        url: 'https://www.youtube.com/watch?v=hGIW2fDb0jg&t=6832s',
         videoURL: 'la-violencia-digital',
         videoInformation:{
             categoryID: 'conferencias',
@@ -25,9 +25,9 @@ export const VideoListDB= [
 
     },
     {
-        title: 'Mi corazon encantado', 
-        url: 'https://www.youtube.com/watch?v=rPF_dL339F4',
-        videoURL: 'mi-corazon',
+        title: 'Como descargar Node JS', 
+        url: 'https://www.youtube.com/watch?v=qZjWUkohSQg',
+        videoURL: 'descargar-node-js',
         videoInformation:{
             categoryID: 'programacion',
             sectionID: 'base-de-datos-123',
