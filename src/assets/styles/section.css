@@ -1,36 +1,28 @@
 .section-container{
-    width: 100%;
-   
+    width: 90%;
+    margin: auto;
 }
-.section{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-}
-/* Estilos para cada apartado de la seccion */
-.section-item{
+.card-container{
     width: 300px;
-    height: 250px;
-    overflow: hidden;
-    /* background-color: red; */
 }
-.section-item .category-image{
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
+.card-container:hover{
+    filter: brightness(.8);
+    transition-duration: .5s;
 }
-.section-item .category-image img{
-    width: 100%;
+.card-container a{
+    font-size: 10px;
 }
-/* ESTILOS DEL RESPONSIVE */
-@media (max-width: 1200px){
-    /* .section{
-        width: 70%;
-    } */
-}
+
+/* Estos estilos son el complemento para la grid de bootstrap que estamos usando en la app */
 @media (max-width: 1000px){
-    /* EN SECTION AMPLIAMOS AL 100% EL ANCHO */
-    /* .section{
+    .section-container{
         width: 100%;
-    } */
+        
+    }
+    .card-container{
+        width: 250px;
+    }
+    .section-container .row{
+        justify-content: center;
+    }
 }
