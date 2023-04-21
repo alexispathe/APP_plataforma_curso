@@ -2,7 +2,7 @@ import { useState, useContext, useEffect } from "react";
 import { Card, Row, Col } from "react-bootstrap"; //Llamamos a las tarjetas y grid de bootstrap
 import { CategoryContext } from "../../contexts/CategoryProvider"; //Importamos el contexto donde estan las secciones
 import { Link } from "react-router-dom";
-import '../../assets/styles/Section.css';
+import '../../assets/styles/SectionComponent.css';
 export const Section = ({ categoryType }) => {
   const [categoriesDB, setCategoriesDB] = useContext(CategoryContext);
   const [categories, setCategories] = useState([]);
