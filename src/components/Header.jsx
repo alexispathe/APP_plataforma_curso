@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { sectionsDB } from "../assets/db/sectionsDB";
-import { categoriesDB } from "../assets/db/categoriesDB";
+import { sectionsDB } from "../assets/database/sectionsDB";
+import { categoriesDB } from "../assets/database/categoriesDB";
 import { Link } from "react-router-dom";
 import "../assets/styles/header.css";
 import {Spinner} from 'react-bootstrap';
@@ -16,11 +16,9 @@ export const Header = () => {
   const onBarsClick=()=>{
     /*  
         Cuando el usuario le de click al menu, este desaparecera y hara el menu oculto aparezca
-        Esta funcion solo se ejecutara cuando el ancho de pantalla sea <=1000px
+        
     */ 
-    document.querySelector('.bars-container').style.display = "none";
     document.querySelector('.header-container').style.marginLeft = "0px";
-    document.querySelector('.close-container').style.display = "block";
   }
   const onCloseClick=()=>{
     // Cuando el usuario le de click, se ocultara el menu

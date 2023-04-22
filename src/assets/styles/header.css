@@ -1,5 +1,5 @@
 @import url('./globalVariables.css');
-/* BARS ICON */
+/******************** BARS ICON *******************+*/
 .bars-container{
     /* display: none; */
     margin-top: 15px;
@@ -18,10 +18,10 @@
     color: var(--bg-selected);
     transition-duration: 0.3s;
 }
-/* FIN BARS ICON */
+/********************** FIN BARS ICON**************** */
 /* CLOSE ICON */
 .close-container{
-    display: none;
+    /* display: none; */
     position: absolute;
     top: 0;
     right: 20px;
@@ -45,7 +45,7 @@
     z-index: 100;
     /* display: none; */
     margin-left: -100%;
-    transition-duration: 0.5s;
+    transition-duration: .5s;
 
 }
 

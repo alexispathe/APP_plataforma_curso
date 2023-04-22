@@ -1,6 +1,6 @@
 // Aqui se crea el contexto para las categorias de la app
 import { createContext, useState } from "react";
-import {categoriesDB} from '../assets/db/categoriesDB';
+import {categoriesDB} from '../assets/database/categoriesDB';
 export const CategoryContext = createContext(null);
 
 export const CategoryProvider = ({children})=>{
