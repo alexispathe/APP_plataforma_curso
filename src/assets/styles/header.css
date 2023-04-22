@@ -23,18 +23,21 @@
 /* CLOSE ICON */
 .close-container{
         /* display: none; */
-        display: none;
          position: absolute;
          top: 0;
          right: 20px;
-    
          z-index: 100;
          /* display: none; */
          margin-left: -100%;
         transition-duration: .5s;
         transition-duration: 0.5s;
-    
+        font-size: 60px;
+        color: white;
+        cursor: pointer;
      }
+.close-container:hover{
+    color: var(--bg-selected)
+}
     /* FIN CLOSE ICON */
 .header{
     width: 100%;
