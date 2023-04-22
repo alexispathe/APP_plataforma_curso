@@ -4,6 +4,7 @@
     --bg-selected: rgb(255, 217, 0);
     /* Color de textos */
     --t-default-color: white;
+    --t-dark-color: black;
     
     /* Tamaños de fuente */
     --fz-title: 26px;

@@ -18,37 +18,16 @@
     color: var(--bg-selected);
     transition-duration: 0.3s;
 }
+
 /********************** FIN BARS ICON**************** */
-/* CLOSE ICON */
-.close-container{
-    /* display: none; */
-    position: absolute;
-    top: 0;
-    right: 20px;
-    font-size: 50px;
-    color: white;
-    cursor: pointer;
-}
-.close-container:hover{
-    color: var(--bg-selected);
-    transition-duration: 0.3s;
-}
-
-/* FIN CLOSE ICON */
-.header-container{
-    width: var(--w-header);
+.header{
+    width: 100%;
+    background-color: var(--bg-primary);
     height: 100vh;
-    background-color:  var(--bg-primary);
-    padding: 20px 0px;
-    position: fixed;
-    float: left;
-    z-index: 100;
-    /* display: none; */
-    margin-left: -100%;
-    transition-duration: .5s;
-
 }
-
+.header-top{
+    width: 100%;
+}
 .header-top .header-logo {
     width: 100%;
     display: flex;
@@ -94,23 +73,7 @@
 
 /* AQUI ESTAN LOS ESTILOS PARA EL RESPONSIVE */
 @media (max-width: 1200px) {
-   
 }
 @media (max-width: 1000px) {
-    /* OCULTAMOS EL HEADER */
-    .header-container{
-        /* margin-left: -100%;
-        transition-duration: 0.5s; */
-    }
-    /* MOSTRAMOS EL ICONO DE BARS */
-    .bars-container{
-        display: block;
-    }
-    /* FIN */
-    /* Mostrar el ICONO DE CLOSE */
-    .close-container{
-        display: block;
-    }
-    /* FIN */
 }
 /*  */
