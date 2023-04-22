@@ -2,7 +2,7 @@
 
 import {NavLink } from "react-router-dom"; //Con NavLink agreamos funcionalidades extras al hipervinculo
 import {Spinner} from 'react-bootstrap';
-import "../../assets/styles/VideoList.css";
+import "../../assets/styles/VideoComponents.css";
 export const VideoListComponent = ({ videoListSection }) => {
   return (
     <>

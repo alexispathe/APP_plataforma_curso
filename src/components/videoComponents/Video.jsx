@@ -1,7 +1,7 @@
 /*
     -----------ESTE COMPONENTE SIRVE PARA RENDERIZAR CADA VIDEO QUE SE LE MANDE----------
 */
-import "../../assets/styles/Video.css";
+import "../../assets/styles/VideoComponents.css";
 import { useEffect, useState } from "react";
 import { Spinner } from "react-bootstrap";
 import { Link, json } from "react-router-dom";

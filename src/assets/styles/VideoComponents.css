@@ -1,0 +1,138 @@
+@import url('./globalVariables.css');
+/************************ESTILOS DEL COMPONENTE LLAMADO VIDEO************************/
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+/* ********************FIN DE LOS ESTILOS DEL COMPONENTE  VIDEO************************/
+
+/* ------------------------ESTILOS DEL COMPONENTE VIDEOPLAYER ---------------*/
+.video-player-container {
+  width: 100%;
+  display: flex;
+}
+
+/* 
+CUANDO EL TAMAÑO DE LA PANTALLA SEA MENOR A 1000PX  SE DEBERA DE PONER EN PANTALLA COMPLETA EL VIDEO Y MENU DESPLEGABLE DE LA LISTA
+SE TRABAJAN LOS COMPONENTES DE "videoComponente" y "VideoListComponent"
+*/
+
+.video-and-list-menu {
+  width: calc(100% - var(--w-video-list));
+}
+/* -----------------------FIN DE LOS ESTILOS DE VIDEO PLAYER-------------- */
+
+
+/***************************ESTILOS DE VIDEOLIST************************* */
+.video-list-container{
+    width: var(--w-video-list);
+    background-color: #f7f4f4;
+    float: right;
+}
+.video-list{
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    overflow: auto;
+
+}
+.video-list-container li{
+    width: 100%;
+    border-bottom: 1px solid rgb(133, 133, 133) ;
+    padding: 10px;
+    list-style: none;
+}
+.video-list-container li a {
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-weight: bold;
+    color: black;
+}
+/* .video-list-container li a:hover {
+    color: var(--bg-selected);
+} */
+.video-list-container li a svg{
+    margin-right: 5px;
+}
+.active-link{
+    color: var(--bg-primary) !important;
+}
+
+/***********************FIN DE ESTILOS VIDEOLIST************************ */
+/*------------ESTILOS WATCHEDVIDEO----------------------------- */
+.watched-video-container{
+    width: 100%;
+    /* height: 100px; */
+    overflow: hidden;
+    background-color: rgba(231, 231, 231, 0.24);
+    position: fixed;
+    bottom: 0;
+    cursor: pointer;
+}
+.watched-video-container:hover{
+    filter: brightness(.9);
+    transition-duration: .4s;
+}
+.watched-video{
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    align-items: center;
+
+}
+.watched-video .video-image{
+    width: 100px;
+    height: 60px;
+}
+.watched-video .video-image img{
+    width: 100px;
+    height: 100%;
+}
+.video-information{
+    margin-left: 10px;
+}
+
+/* --------FIN ESTILOS WATCHEDVIDEO----------------------------- */
+
+
+/*-----------------------------------------RESPONSIVE WEB DESIGN-----------------------------------------------------------------*/
+/* 
+TAMAÑOS USADOS 
+*1000PX
+
+*/
+
+@media (max-width: 1000px) {
+  /*-------------------------------------- ESTILOS DE VIDEOPLAYER ------------------------------------*/
+  .video-player-container {
+    display: block;
+  }
+  /* ESTILOS DE VIDEOLISTCOMPONENT */
+  .video-and-list-menu {
+    width: 90%;
+    margin: 10px auto;
+  }
+  .video-list-container {
+    width: 100%;
+  }
+  .video-list {
+    max-height: 500px;
+    overflow: auto;
+  }
+  /* -----------------------------------FIN ESTILOS DE VIDEOLISTCOMPONENT-------------------------- */
+}

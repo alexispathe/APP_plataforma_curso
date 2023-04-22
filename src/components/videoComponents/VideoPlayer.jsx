@@ -4,7 +4,7 @@ import { VideosContext } from "../../contexts/VideosProvider";
 import { useParams } from "react-router-dom"; //con esta funcion capturaremos los parametros que hay en la url, en este caso es :curso, :id
 import { VideoListComponent } from "./VideoList";
 import { VideoComponent } from "./Video";
-import '../../assets/styles/VideoPlayer.css';
+import "../../assets/styles/VideoComponents.css";
 export const VideoPlayerComponent = () => {
   const [dbVideoList, setDBVideoList] = useContext(VideosContext); //Videos devueltos de la base de datos
   const [videoListSection, setVideoListSection] = useState([]); //Aqui almacenaremos la lista de videos que coencidan con el curso o seccion
