@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import '../../assets/styles/WatchedVideoComponent.css';
+import '../../assets/styles/WatchedVideo.css';
 import { Link } from "react-router-dom";
 
 /*ESTE COMPONENTE SIRVE PARA MOSTRAR EL ULTIMO VIDEO VISTO POR EL USUARIO*/

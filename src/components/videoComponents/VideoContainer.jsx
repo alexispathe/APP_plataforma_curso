@@ -1,5 +1,5 @@
 /*---------ESTE ES EL COMPONENTE PADRE PARA LOS VIDEOS, ES DECIR QUE AQUI DEBEOS DE PASAR LA LISTA DE TODOS LOS VIDEOS QUE VAMOS A RENDERIZAR------ */
-import { VideoComponent } from "./VideoComponent"; //Component que nos servira como render para cada video devuelto
+import { VideoComponent } from "./Video"; //Component que nos servira como render para cada video devuelto
 import { Spinner } from "react-bootstrap";
 import { Row, Col } from "react-bootstrap"; //Importamos estas librerias para trabajar con la "GRID" de bootstrap"
 export const VideoContainerComponent = ({ videoList,sm,md,lg }) => {

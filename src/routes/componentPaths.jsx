@@ -1,6 +1,6 @@
 import {Home} from "../components/Home";
 import { Section } from "../components/sections/Section";
-import { VideoPlayerComponent } from "../components/videoComponents/VideoPlayerComponent";
+import { VideoPlayerComponent } from "../components/videoComponents/VideoPlayer";
 import { Error } from "../components/Error";
 export const componentPaths = [
     {

@@ -1,6 +1,6 @@
 import '../assets/styles/home.css';
 import { Search } from './Search';
-import { WatchedVideoComponent } from './videoComponents/WatchedVideoComponent';
+import { WatchedVideoComponent } from './videoComponents/WatchedVideo';
 import { Section } from './sections/Section';
 import { useEffect, useState } from 'react';
 export const Home =()=>{
