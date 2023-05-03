@@ -15,12 +15,16 @@ export const Home =()=>{
         }
     }
     return(
-        <div className="home-container">
-            <Search/>
-            <Section categoryType="curso"/>
-            {status? <WatchedVideoComponent/> :''}
+        <>
+        <div className="container mt-3">
+            <Search title="¿Que estas buscando?"/>
+            <Section sectionType="curso"/>
+            
             
         </div>
+        {status? <WatchedVideoComponent/> :''}
+        </>
+        
     )
 };
 

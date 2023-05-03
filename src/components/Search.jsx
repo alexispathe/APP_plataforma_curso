@@ -4,7 +4,7 @@ import { Form } from "react-bootstrap";
 import { VideosContext } from "../contexts/VideosProvider";
 import { VideoContainerComponent } from "./videoComponents/VideoContainer";
 
-export const Search = () => {
+export const Search = ({title}) => {
   /* IMPORTAMOS EL CONTEXTO Y LO PASAMOS EN USECONTEXT */
   const [videoList, setVideoList] = useState([]);
   const [videosDB, setVideosDB] = useContext(VideosContext); //Como estamos trabajando con un estado en "VideosProvider" lo devolvemos
@@ -22,11 +22,12 @@ export const Search = () => {
   };
   return (
     <>
-      <div className="container">
+      <div className="">
+        <h1 className="text-center">{title}</h1>
         <Form className="d-flex" onSubmit={(e) => e.preventDefault()}>
           <Form.Control
             type="search"
-            placeholder="¿Qué estás buscando?"
+            placeholder="Buscar curso, conferencia, articulo..."
             className=""
             aria-label="Search"
             onChange={(e) => handleChange(e)}

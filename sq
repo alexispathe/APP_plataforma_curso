@@ -1,0 +1,313 @@
+[33mcommit bde626d59708dbd1817165f8efa205f5a617d638[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Sat Apr 22 13:57:20 2023 -0600
+
+    Se mejora el header
+
+[33mcommit 453f8408122987fa6636095b4e8056dbf381ebc0[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Sat Apr 22 13:50:44 2023 -0600
+
+    Se regrean los estilos de close
+
+[33mcommit 31704a9dd3ea4c188440ff2721978d35132473c4[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Sat Apr 22 13:46:51 2023 -0600
+
+    Esta en proceso el header
+
+[33mcommit 3c0bf791aa2a6a455d5ed6af263f06f9134bb2bc[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Sat Apr 22 13:13:24 2023 -0600
+
+    se cambia el nombre de la carpeta de la base de datos
+
+[33mcommit 1b6f719b826180e185e84477afea09a23e7e3efe[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Sat Apr 22 10:35:17 2023 -0600
+
+    Se manda los estilos para los componentes de video a un archivo llamado videoComponents
+
+[33mcommit 1d11f52c9498589d7298eef84d6ce02948f9b70a[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Fri Apr 21 20:12:24 2023 -0600
+
+    Se modifican el nombre de los archivos jsx y css
+
+[33mcommit 31124dedd045b3d1ace5b10a4febec99d1b1bb24[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Fri Apr 21 19:49:59 2023 -0600
+
+    Apartir de ahora, comienza un estructuracion de todos los archivos para mejorar la busqueda de estos
+
+[33mcommit 31fb27bfbcb172d7d893857a5b3ecabafcc70f99[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Fri Apr 21 00:02:27 2023 -0600
+
+    se agregan los estilos
+
+[33mcommit b196f63bba001a769db4615c8871296e545fd5a2[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Fri Apr 21 00:00:55 2023 -0600
+
+    a
+
+[33mcommit 70cfe5164cd6d553784568d40b860ff81cc304ca[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Thu Apr 20 23:59:23 2023 -0600
+
+    Se cambia la ruta de los estilos de Section
+
+[33mcommit 283ef3ab7323e0b502d5c72ac62704ef9c75aca9[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Thu Apr 20 23:53:38 2023 -0600
+
+    Se corre unos estilos
+
+[33mcommit 96f64fdb7807b6cd3477220202e060a7136e8d56[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Thu Apr 20 23:49:58 2023 -0600
+
+    Se mejoran los estilos de la seccion
+
+[33mcommit 90a87e511fbd15caea8e595b74d6e33c5bdd5fdb[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Thu Apr 20 15:54:10 2023 -0600
+
+    Se modifica el header de la app para que este oculta y el tamaño del componente home se amplia
+
+[33mcommit 28fcf4180ed8712aa3029dfce8419dd7526d262e[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Thu Apr 20 15:36:47 2023 -0600
+
+    Se hacen los ultimos cambios antes de cambiar los estilos del header
+
+[33mcommit 99bdc2c4a575acb532d27163805e0e03fea1a098[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Thu Apr 20 14:47:06 2023 -0600
+
+    Se corrige el contexto de las categoriasa, ademas se logra mostrar los diferentes apartados en el html
+
+[33mcommit 5125fc31aa8a93d5202fca328a24cc9d1e0c53b4[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Thu Apr 20 12:42:35 2023 -0600
+
+    Se implementa el context de categorias en todos los componentes
+
+[33mcommit d6b7cb5c65c3aad0c92c838dd2092f9ef13b0551[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Thu Apr 20 12:37:41 2023 -0600
+
+    Se crea el contexto para las seccion de los cursos
+
+[33mcommit db9a4898b337105956be92b7b4a65169c6232a97[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Mon Apr 10 23:54:19 2023 -0600
+
+    Se mejora el diseño del componente WatchedVideoComponen
+    ;
+
+[33mcommit 4b66ff1ef9011511618070556d34887f0fa95623[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Mon Apr 10 15:07:15 2023 -0600
+
+    Se implementa el componente del ultimo video visto por el usuario
+
+[33mcommit d2c15a1978f1e951b4a401ca7bda3ce20c5dcf75[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Sun Apr 9 13:26:15 2023 -0600
+
+    Se implementara un nuevo componente para mostrar el ultimo video visto por el usuario
+
+[33mcommit 5c580c704cd1730a1cbaa44655afdd4672d0f95d[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Sat Apr 8 18:24:38 2023 -0600
+
+    Se agrega la funcionalidad de que se alamacen los videos vistos por el usuario en el loclastoarage
+
+[33mcommit bbdee1562620df4ba804f62f87a6db792b4623cc[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Sat Apr 8 14:21:36 2023 -0600
+
+    Se mejora el diseño del responsive en el componente videoPlayerComponent
+
+[33mcommit 381153adb63637be790e545dea42dd2a24b0f56b[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Sat Apr 8 13:33:24 2023 -0600
+
+    Se soluciona el problema del tamaño del video
+
+[33mcommit af69b556f21e3b122bc4f9d49daf0283c2a8e634[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Sat Apr 8 12:52:08 2023 -0600
+
+    Se añade el componente de error
+
+[33mcommit ee0b9371f3ebb08a633dc38760d1af93cdd363e4[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Fri Apr 7 22:18:04 2023 -0600
+
+    Se modificara la logica de VideoListComponent para pasarla a VideoPlayerComponent
+
+[33mcommit f6247d403583fd34d27f1024515fc63e60836cf2[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Fri Apr 7 22:03:43 2023 -0600
+
+    Se mejora la lista de los videos, ademas se agrega la funcionalidad de cambiar el color en el link que estas visitando
+
+[33mcommit 143c8e965eec4920f21755a94d0aae4f775a1b92[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Fri Apr 7 00:43:00 2023 -0600
+
+    Se mejora el diseño para la lista de los videos, ademas se añade la ruta para navegar en videos de la misma seccion
+
+[33mcommit 49f069885921ccb1c42fbd7c862efa5fd760a48e[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Fri Apr 7 00:19:27 2023 -0600
+
+    Se mejora la estructura de la base de datos, ademas se logra devolver la lista de los videos dependiendo de la seccion
+
+[33mcommit a2ce5e733be445a17189e73708b908bad05fd0fd[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Thu Apr 6 23:16:45 2023 -0600
+
+    Solucionamos las rutas como la estructura de la base de datos para tener un mejor orden
+
+[33mcommit d39b90dbb13ec48c23cc9c00ab707a50d4e5df92[m[33m ([m[1;32mvideoList[m[33m)[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Thu Apr 6 20:43:44 2023 -0600
+
+    Se añade la grid para los videos
+
+[33mcommit 9bebf555e4d2a6b4eedbf5e210f194c5d1f5563a[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Thu Apr 6 19:44:42 2023 -0600
+
+    Se soluciona el problema de la renderizacion de videos
+
+[33mcommit 405c4c9dbdda053cdd3d26f8bb7d4120c2d6a31b[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Thu Apr 6 18:46:12 2023 -0600
+
+    Se examinara la logica de VideoListComponente para solucionar el problema de renderizado
+
+[33mcommit f91941a5a43eb85d9810590ddb223533fc542643[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Thu Apr 6 18:45:30 2023 -0600
+
+    Hasta el momento fue capaz de mandar los videos al VideListComponente pero falta solucionar la renderizacion de cada video nuevo en el buscador
+
+[33mcommit 10cdc62f8dee9c0d2f2f6b52dbfb6d48742485c3[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Thu Apr 6 17:20:22 2023 -0600
+
+    Se crea el contexto donde en todos los componentes pueden acceder a la lista de los videos
+
+[33mcommit b182feb2af10f9404d4522eea8943c22b0da479f[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Thu Apr 6 16:01:22 2023 -0600
+
+    Comenzamos con los contextos para el buscador
+
+[33mcommit c56e62c77dc10c24ce44d749ddafa07b201986d1[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Wed Apr 5 23:19:00 2023 -0600
+
+    Se adapatan los tamaños responsive para home y header
+
+[33mcommit 87e80f35946ce9f91f8590822233a7b3aea79252[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Wed Apr 5 22:19:43 2023 -0600
+
+    Se modifican algunos codigos
+
+[33mcommit 0e0cdce11f2596e161fb5b3815916ee52c5ae00a[m
+Merge: cb600e7 a2a380e
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Wed Apr 5 20:39:37 2023 -0600
+
+    Merge branch 'videoListComponent'
+
+[33mcommit cb600e72b6cd97480156d917824741930f1a846f[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Wed Apr 5 20:36:01 2023 -0600
+
+    Se completa la fusion la rama header
+
+[33mcommit db33fbce86ab6eb123d60f215b0477290f209849[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Wed Apr 5 17:04:05 2023 -0600
+
+    Se mejora el responsive para diferentes tamaños
+
+[33mcommit 53c4fe6087758e3790d3ddb850e78ee069f7e1ce[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Wed Apr 5 16:12:21 2023 -0600
+
+    Se le da funcionalidad al boton para cerrar el menu
+
+[33mcommit 91bc03583fdd4e14a3059adde5d2116ff15be0c8[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Wed Apr 5 15:21:34 2023 -0600
+
+    Se crea una funcion que permite que al darle click aparezca el menu desplegable
+
+[33mcommit 7adac6a9950e298851883bdecdd20e9583afbcfd[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Wed Apr 5 13:01:20 2023 -0600
+
+    Se soluciona un pequeño bug donde se repetian items
+
+[33mcommit 73bdf6437d5ed291a46a20072be56f6bcd3b2f68[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Wed Apr 5 12:56:26 2023 -0600
+
+    Se completa la configuracion del componente del header pero aun falta mejorar los estilos y el resposive
+
+[33mcommit a2a380e1c205c199a2d3b54d34d9c5d643d71bdc[m[33m ([m[1;32mvideoListComponent[m[33m)[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Tue Apr 4 17:32:45 2023 -0600
+
+    Se mejora la estructura para mandar videos
+
+[33mcommit 91f73a17c104394163285271db72762f96e9d966[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Tue Apr 4 16:59:38 2023 -0600
+
+    Se hace una modificacion en el componente de VideoComponent
+
+[33mcommit 3291b51e2952ad2a31e52f8dcad739849a29529e[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Tue Apr 4 16:58:18 2023 -0600
+
+    Se crean datos para simular videos de youtube y se manda a llamar en el componente de VideListComponent
+
+[33mcommit ede0eadad6de5f64d45bab6ebf15d44e75eb303c[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Tue Apr 4 16:24:10 2023 -0600
+
+    Se crea un nuevo compononente llamado VideComponent para que ahi se renderize cada video
+
+[33mcommit 1210ef4d973e6ddc5ed02183484524a53483e527[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Tue Apr 4 15:08:51 2023 -0600
+
+    Se crea la funcion para devolver los videos de un canal de youtube
+
+[33mcommit e8becb0c31f229480ee78afde13217b436e63eaf[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Mon Apr 3 22:25:43 2023 -0600
+
+    Se instala el modulo de react-router-dom para trabajar con rutas, ademas se crea el componente de 'Home'
+
+[33mcommit 3aab301738640ad109f13b000a0bd5749d39c708[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Mon Apr 3 22:09:14 2023 -0600
+
+    Se implementa bootstrap como framework para los estilos
+
+[33mcommit 06ed0c878f1023a7422a9e56edd3704fa733b7a2[m
+Author: Alexis Pathe <alexispatheguillen@gmail.com>
+Date:   Mon Apr 3 22:01:23 2023 -0600
+
+    Se inicia el proyecto para la aplicacion de los cursos de ESTIC

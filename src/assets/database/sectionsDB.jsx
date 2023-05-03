@@ -2,17 +2,26 @@
 export const sectionsDB =[
     {
         name: 'Conferencias',
-        sectionURL: 'conferecias',
-        sectionID: 'conferencias-124'
+        sectionURL: 'conferecias-12',
+        sectionID: 'conferencias-124',
+        sectionType: 'conferencias'
     },
     {
         name: 'Programacion',
         sectionURL: 'programacion',
-        sectionID: 'programacion-12'
+        sectionID: 'programacion-12',
+        sectionType: 'curso'
     },
     {
         name: 'Matematicas Discretas',
         sectionURL: 'matematicas',
-        sectionID: 'matematicas-512'
+        sectionID: 'matematicas-512',
+        sectionType: 'curso'
+    },
+    {
+        name: 'Tecnologia',
+        sectionURL: 'tecnologia',
+        sectionID: 'tecnologia-512',
+        sectionType: 'articulos'
     }
 ];
