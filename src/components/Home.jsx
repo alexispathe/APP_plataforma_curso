@@ -1,10 +1,12 @@
+import { useEffect, useState } from 'react';
 import '../assets/styles/home.css';
 import { Search } from './Search';
 import { WatchedVideoComponent } from './videoComponents/WatchedVideo';
 import { Section } from './sections/Section';
-import { useEffect, useState } from 'react';
+import { SectionTypes } from '../assets/database/sectionTypes';//devolvemos el tipo de secciones que hay
 export const Home =()=>{
     const [status, setStatus] = useState(false);
+    const [sectionTypes, setSectionTypes] = useState(SectionTypes);
     useEffect(()=>{
         showComponent();
     },[])
@@ -18,9 +20,12 @@ export const Home =()=>{
         <>
         <div className="container mt-3">
             <Search title="¿Que estas buscando?"/>
-            <Section sectionType="curso"/>
-            
-            
+            {sectionTypes && sectionTypes.length >= 1? 
+                sectionTypes.map((type, i)=>(
+                <Section sectionType={type.nameID} name={type.name} key={i} />
+                ))
+            : ''
+            }
         </div>
         {status? <WatchedVideoComponent/> :''}
         </>

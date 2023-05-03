@@ -1,4 +1,4 @@
-export const sectionTypes = [
+export const SectionTypes = [
     {
         name: 'Curso',
         nameID: 'curso-123'

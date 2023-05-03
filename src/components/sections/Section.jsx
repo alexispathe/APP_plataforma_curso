@@ -3,7 +3,7 @@ import { useState, useContext, useEffect } from "react";
 import { Card, Row, Col } from "react-bootstrap"; //Llamamos a las tarjetas y grid de bootstrap
 import { CategoryContext } from "../../contexts/CategoryProvider"; //Importamos el contexto donde estan las secciones
 import { Link } from "react-router-dom";
-export const Section = ({ sectionType }) => {
+export const Section = ({ sectionType, name }) => {
   const [categoriesDB, setCategoriesDB] = useContext(CategoryContext);
   const [categories, setCategories] = useState([]);
   useEffect(() => {
@@ -11,7 +11,7 @@ export const Section = ({ sectionType }) => {
   }, []);
   const filterCategories = (sectionType) => {
     /*Esta funcion permitira hacer un filtro de cada uno de los curso o seccion donde coencida la propiedad categoryTypecon*/
-    console.log(categoriesDB[0].sectionInformation.sectionType)
+    
     setCategories([
       ...categoriesDB.filter(
         (category) => category.sectionInformation.sectionType === sectionType
@@ -24,7 +24,7 @@ export const Section = ({ sectionType }) => {
       {categories && categories.length >= 1? 
 
     <div className="section-container">
-          <h1 className="text-center">{categories[0].categoryInformation.categoryID}</h1>
+          <h1 className="text-center">{name}</h1>
           <Row className="">
              {categories.map((category) => (
                   <Col xs={12} sm={6} md={6} lg={4} xl={"auto"} className="card-container"   >

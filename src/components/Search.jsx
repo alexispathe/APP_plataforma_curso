@@ -39,7 +39,8 @@ export const Search = ({title}) => {
                 <VideoContainerComponent videoList={videoList} sm={12} md={6} lg={4} /> {/*sm, md, lg = tamaño de la grid en bootstrap*/}
             </div>
         ) : (
-            <p className="text-danger pt-2">No se encontro ningun resultado</p>
+          ''
+            // <p className="text-danger pt-2">No se encontro ningun resultado</p>
         )}
       </div>
     </>
