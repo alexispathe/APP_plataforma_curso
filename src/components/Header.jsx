@@ -49,7 +49,7 @@ export const Header = () => {
                         
                         <div>
                         {/*  Este es el nombre del curso que se muestra */}
-                          <p className="header-type">{type.name}</p>
+                          {/* <p className="header-type">{type.name}</p> */}
                           {/* Esta es la lista sirve para mostrar las secciones con sus categorias */}
                         <ul className="header-section">
                         {//Aqui estamos devolviendo todas las secciones de nuestra base de datos
