@@ -64,14 +64,26 @@
 }
 .header-section{
     padding-left: 10px;
+    margin: 0;
+}
+.header-type{
+    color: white;
+    font-size: var(--fz-section);
+    text-align: center;
+    cursor: pointer;
+    margin: 0;
 }
 .header-section-container li{
     list-style: none;
     padding: 5px 0px ;
+    color: white;
+    font-size: var(--fz-section);
+    cursor: pointer;
+
 }
 .header-section-item a{
     text-decoration: none;
-    font-size: var(--fz-section);
+    /* font-size: var(--fz-section); */
     color: var(--t-default-color);
 }
 /* Estilos del sub menu */

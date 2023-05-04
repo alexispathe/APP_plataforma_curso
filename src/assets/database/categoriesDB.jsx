@@ -3,28 +3,28 @@ export const categoriesDB = [
   {
     name: "Desarrollo WEB",
     categoryInformation: {
-      categoryType: "curso",
+      categoryType: "cursos",
       categoryURL: "desarrollo-web",
       categoryID: "desarrollo-web-123",
       image: "https://imgs.search.brave.com/FgqHzODPqAddpqbAowqGzqwcpHekk61L0wdvySvs6Z0/rs:fit:1200:1080:1/g:ce/aHR0cHM6Ly9odW5h/Ymt1Lm14L3N0b3Jh/Z2UvaW1hZ2VuZXMv/d3AvMjAyMC8wOS9x/dWV0aXBvX2Rlc2Fy/cm9sbG93ZWJfMTky/MHgxMDgwLmpwZw"
     },
     sectionInformation:{
-      sectionType: 'curso-123',
+      sectionType: 'cursos-123',
       sectionID: "programacion-12",
     },
     iconName: "fa-solid fa-browser",
   },
   {
-    name: "Base de datos",
+    name: "Mysql",
     categoryInformation: {
-      categoryType: "curso",
-      categoryURL: "base-de-datos",
-      categoryID: "base-de-datos-123",
+      categoryType: "cursos",
+      categoryURL: "mysql",
+      categoryID: "mysql-123",
       image: "https://imgs.search.brave.com/i8XtX52Nh9sMZxXr4d9hZ6rT9zaqSZ5EfFNBO1lCRi0/rs:fit:715:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5a/OG84NkhBWWRpMzc1/VFRrajlzNF9RSGFF/NiZwaWQ9QXBp"
     },
     sectionInformation:{
-      sectionType: 'curso-123',
-      sectionID: "programacion-12",
+      sectionType: 'cursos-123',
+      sectionID: "base-de-datos-12",
 
     },
     iconName: "fa-solid fa-database",
@@ -46,13 +46,13 @@ export const categoriesDB = [
   {
     name: "Teoria de la computacion",
     categoryInformation: {
-      categoryType: "curso",
+      categoryType: "cursos",
       categoryURL: "teoria-computacion",
       categoryID: "teoria-computacion-123",
       image: "https://imgs.search.brave.com/nZ9GHDDQBin7YkDqalOwE2QQGmw6NqfT2LhZpxlBwKM/rs:fit:844:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5a/bnlOYV9XRVpIQnls/SENucVd2ZjN3SGFF/SyZwaWQ9QXBp"
     },
     sectionInformation:{
-      sectionType: 'curso-123',
+      sectionType: 'cursos-123',
       sectionID: "matematicas-512",
     },
     iconName: "fa-solid fa-computer-classic",

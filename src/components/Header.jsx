@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { sectionsDB } from "../assets/database/sectionsDB";
 import { categoriesDB } from "../assets/database/categoriesDB";
+import { SectionTypes } from "../assets/database/sectionTypes";
 import { Link } from "react-router-dom";
 import "../assets/styles/header.css";
 import { Spinner, Offcanvas } from 'react-bootstrap';
@@ -8,6 +9,7 @@ import { IoIosArrowDown } from 'react-icons/io';
 export const Header = () => {
   const [sections, setSections] = useState([]);
   const [categories, setCategories] = useState([]);
+  const [sectionTypes, setSectionTypes] = useState(SectionTypes);
   // Estados para el offCanvas de bootstrap
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
@@ -38,27 +40,48 @@ export const Header = () => {
                   </div>
                 </div>
             </Offcanvas.Header>
-            <Offcanvas.Body>
+            <Offcanvas.Body className="pt-0">
               <div className="header-down">
                 {sections && sections.length >= 1 ? (
                   <div className="header-section-container">
-                    <ul className="header-section">
-                      {//Aqui estamos devolviendo todas las secciones de nuestra base de datos
-                        sections.map((section, i) => (
-                          <li className="header-section-item" key={section.sectionID || i}>
-                            <Link to={"/seccion/" + section.sectionURL} >{section.name} <IoIosArrowDown /></Link>
-                            <ul className="h-s-sub-item-container" >
-                              {categories.length >= 1 ? //Aqui estamos devolviendo todas categorias de BD para luego compararlos mediante su 'sectionID' y hacer una relacion 
-                                categories.map((category, j) => (
-                                  category.sectionInformation.sectionID === section.sectionID ?
-                                    <li className="h-s-sub-item" key={category.categoryID || j}><Link to={"/seccion/" + section.sectionURL + "/" + category.categoryInformation.categoryURL}><i className={category.iconName} style={{ "margin-right": 5 }} ></i>{category.name}</Link></li>
-                                    : ''
-                                )) : <div className="text-center"><Spinner animation="border" className="text-white" /></div>
-                              }
-                            </ul>
-                          </li>
-                        ))}
-                    </ul>
+                    {
+                      SectionTypes.map((type, i)=>(
+                        
+                        <div>
+                        {/*  Este es el nombre del curso que se muestra */}
+                          <p className="header-type">{type.name}</p>
+                          {/* Esta es la lista sirve para mostrar las secciones con sus categorias */}
+                        <ul className="header-section">
+                        {//Aqui estamos devolviendo todas las secciones de nuestra base de datos
+                      
+                          <li className="header-section-type" key={i}>
+                            
+                           { sections.map((section, i) => (
+                              type.nameID === section.sectionType ? 
+                              <li className="header-section-item" key={section.sectionID || i}>
+                              <Link to={"/seccion/" + section.sectionURL} >{section.name} <IoIosArrowDown /></Link>
+                              <ul className="h-s-sub-item-container" >
+                                {categories.length >= 1 ? //Aqui estamos devolviendo todas categorias de BD para luego compararlos mediante su 'sectionID' y hacer una relacion 
+                                  categories.map((category, j) => (
+                                    category.sectionInformation.sectionID === section.sectionID ?
+                                      <li className="h-s-sub-item" key={category.categoryID || j}><Link to={"/seccion/" + section.sectionURL + "/" + category.categoryInformation.categoryURL}><i className={category.iconName} style={{ "margin-right": 5 }} ></i>{category.name}</Link></li>
+                                      : ''
+                                  )) : <div className="text-center"><Spinner animation="border" className="text-white" /></div>
+                                }
+                              </ul>
+                            </li>
+                              :''
+                          ))
+                          }
+                            </li>
+                          }
+                      </ul>
+                        </div>
+                        
+                        ))
+                    }
+                   
+                    
                   </div>
                 ) : (
                   <div className="text-center pt-5"><Spinner animation="border" className="text-white" /></div>
