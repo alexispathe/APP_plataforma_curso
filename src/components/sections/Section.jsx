@@ -23,14 +23,19 @@ export const Section = ({ sectionType, name }) => {
       {categories && categories.length >= 1 ? (
         <div className="section-container">
           <h1 className="text-center">{name}</h1>
-          <div className="card-container d-flex overflow-auto ">
+          <div className="card-container d-flex overflow-auto w-100 ">
             {categories.map((category) => (
-              <Card style={{ minWidth: "300px" }} className="card-item m-2">
+              <div className="m-2" >
+                <Card  className="card-item">
                 <Link to="" className="text-decoration-none">
-                  <Card.Img
-                    variant="top"
-                    src={category.categoryInformation.image}
-                  />
+                  <div className="overflow-hidden" style={{width: '300px', height: "150px" }}>
+                    <Card.Img
+                      variant="top"
+                      src={category.categoryInformation.image}
+                     
+                    />
+                  </div>
+                  
                   <Card.Body>
                     <Card.Title className="text-center">
                       {category.name}
@@ -38,6 +43,8 @@ export const Section = ({ sectionType, name }) => {
                   </Card.Body>
                 </Link>
               </Card>
+                </div>
+              
             ))}
           </div>
         </div>

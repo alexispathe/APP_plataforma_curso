@@ -75,9 +75,8 @@ SE TRABAJAN LOS COMPONENTES DE "videoComponente" y "VideoListComponent"
 /*------------ESTILOS WATCHEDVIDEO----------------------------- */
 .watched-video-container{
     width: 100%;
-    /* height: 100px; */
     overflow: hidden;
-    background-color: rgba(231, 231, 231, 0.24);
+    background-color: rgb(255, 255, 255);
     position: fixed;
     bottom: 0;
     cursor: pointer;
@@ -88,10 +87,7 @@ SE TRABAJAN LOS COMPONENTES DE "videoComponente" y "VideoListComponent"
 }
 .watched-video{
     width: 100%;
-    /* height: 100%; */
     display: flex;
-    /* flex-wrap: wrap; */
-    /* justify-content: center; */
     align-items: center;
 
 }

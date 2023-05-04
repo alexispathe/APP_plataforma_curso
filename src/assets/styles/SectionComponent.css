@@ -1,27 +1,7 @@
-/* .section-container{
-    width: 100%;
-    margin: auto;
-}
-.card-container{
-    display: flex;
-    justify-content: space-between;
-    overflow: auto;
-} */
 .card-item:hover{
     filter: brightness(.8);
     transition-duration: .5s;
 }
 .card-item a{
     font-size: 10px;
-}
-
-/* Estos estilos son el complemento para la grid de bootstrap que estamos usando en la app */
-@media (max-width: 1000px){
-   
-    /* .card-container{
-        width: 250px;
-    }
-    .section-container .row{
-        justify-content: center;
-    } */
 }
