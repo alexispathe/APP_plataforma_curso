@@ -32,7 +32,6 @@ export const Section = ({ sectionType, name }) => {
                     <Card.Img
                       variant="top"
                       src={category.categoryInformation.image}
-                     
                     />
                   </div>
                   

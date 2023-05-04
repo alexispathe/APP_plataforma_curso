@@ -31,7 +31,7 @@ export const Header = () => {
                   <div className="close-container" onClick={handleClose} >
                     &times;
                   </div>
-                  <div className="header-logo">
+                  <div className="header-logo" onClick={handleClose}>
                     <Link to="/">
                       <img src="https://imgs.search.brave.com/siYYlprg8CKMxqTSw4jv8Ma2VnLTdEqOQZqcsh_qQM0/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9kb3du/bG9hZC5sb2dvLndp/bmUvbG9nby9Ob2Rl/LmpzL05vZGUuanMt/TG9nby53aW5lLnBu/Zw" />
                     </Link>
