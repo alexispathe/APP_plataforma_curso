@@ -3,7 +3,6 @@ import { useContext, useState } from "react";
 import { Form } from "react-bootstrap";
 import { VideosContext } from "../contexts/VideosProvider";
 import { VideoContainerComponent } from "./videoComponents/VideoContainer";
-
 export const Search = ({title}) => {
   /* IMPORTAMOS EL CONTEXTO Y LO PASAMOS EN USECONTEXT */
   const [videoList, setVideoList] = useState([]);
@@ -13,7 +12,7 @@ export const Search = ({title}) => {
     const data = [];
     for (let video of videosDB) {
       if (
-        video.title.toLowerCase().search(evt.target.value.toLowerCase()) >= 0
+        video.title.toLowerCase().search(evt.target.value.toLowerCase()) >= 1
       ) {
         data.push(video);
       }
