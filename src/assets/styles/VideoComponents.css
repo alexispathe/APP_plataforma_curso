@@ -105,6 +105,26 @@ SE TRABAJAN LOS COMPONENTES DE "videoComponente" y "VideoListComponent"
 
 /* --------FIN ESTILOS WATCHEDVIDEO----------------------------- */
 
+/**************ESTILOS DE COURSEVIDEOLIST******************* */
+.course-video-list-container{
+  width: 90%;
+  margin: auto;
+}
+.course-video-list-container li{
+  list-style: none;
+  margin-top: 10px;
+}
+.course-video-list-container li a{
+  text-decoration: none;
+  font-size: var(--fz-p);
+  font-weight: bold;
+  
+}
+.course-video-list-container li a:hover{
+  color: var(--bg-selected)
+}
+
+/* ******************FIN COURSEVIDEOLIST********************************/
 
 /*-----------------------------------------RESPONSIVE WEB DESIGN-----------------------------------------------------------------*/
 /* 

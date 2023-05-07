@@ -5,8 +5,20 @@ export const VideoListDB= [
         url: 'https://www.youtube.com/watch?v=Z6dIdJX4ens',
         videoURL: 'base-datos-relacionales',
         videoInformation:{
-            categoryID: 'programacion',
-            sectionID: 'base-de-datos-123',
+            categoryID: 'mysql',
+            sectionID: 'base-de-datos',
+            creationDate: '',
+            authorID: '',
+        }
+
+    },
+    {
+        title: 'Insertar tablas', 
+        url: 'https://www.youtube.com/watch?v=Z6dIdJX4ens',
+        videoURL: 'insertar-tablas',
+        videoInformation:{
+            categoryID: 'mysql',
+            sectionID: 'base-de-datos',
             creationDate: '',
             authorID: '',
         }
@@ -25,12 +37,12 @@ export const VideoListDB= [
 
     },
     {
-        title: 'Como descargar Node JS', 
+        title: 'Hacer Join', 
         url: 'https://www.youtube.com/watch?v=qZjWUkohSQg',
-        videoURL: 'descargar-node-js',
+        videoURL: 'hacer-join',
         videoInformation:{
-            categoryID: 'programacion',
-            sectionID: 'base-de-datos-123',
+            categoryID: 'mysql',
+            sectionID: 'base-de-datos',
             creationDate: '',
             authorID: '',
         }

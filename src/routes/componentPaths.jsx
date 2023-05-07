@@ -1,19 +1,15 @@
 import {Home} from "../components/Home";
-import { Section } from "../components/sections/Section";
 import { VideoPlayerComponent } from "../components/videoComponents/VideoPlayer";
 import { Error } from "../components/Error";
+import { CourseVideoList } from "../components/videoComponents/CourseVideoList";
 export const componentPaths = [
     {
         element: <Home/>,
         path: '/'
     },
     {
-        element: <Section/>,
-        path: '/seccion/:id'
-    },
-    {
-        element: <Section/>,
-        path: '/seccion/:id/:id'
+        element: <CourseVideoList/>,
+        path: '/lista-videos/:section/:course'
     },
     {
         element: <VideoPlayerComponent/>,

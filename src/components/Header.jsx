@@ -27,7 +27,7 @@ export const Header = () => {
       </div>
       <div className="header-container">
         <Offcanvas show={show} onHide={handleClose}>
-          <div class="header">
+          <div className="header">
             <Offcanvas.Header  >
                 <div className="header-top">
                   <div className="close-container" onClick={handleClose} >
@@ -47,14 +47,14 @@ export const Header = () => {
                     {
                       SectionTypes.map((type, i)=>(
                         
-                        <div>
+                        <div key={i}>
                         {/*  Este es el nombre del curso que se muestra */}
                           {/* <p className="header-type">{type.name}</p> */}
                           {/* Esta es la lista sirve para mostrar las secciones con sus categorias */}
                         <ul className="header-section">
                         {//Aqui estamos devolviendo todas las secciones de nuestra base de datos
                       
-                          <li className="header-section-type" key={i}>
+                          <li className="header-section-type" >
                             
                            { sections.map((section, i) => (
                               type.nameID === section.sectionType ? 
@@ -64,7 +64,7 @@ export const Header = () => {
                                 {categories.length >= 1 ? //Aqui estamos devolviendo todas categorias de BD para luego compararlos mediante su 'sectionID' y hacer una relacion 
                                   categories.map((category, j) => (
                                     category.sectionInformation.sectionID === section.sectionID ?
-                                      <li className="h-s-sub-item" key={category.categoryID || j}><Link to={"/seccion/" + section.sectionURL + "/" + category.categoryInformation.categoryURL}><i className={category.iconName} style={{ "margin-right": 5 }} ></i>{category.name}</Link></li>
+                                      <li className="h-s-sub-item" key={category.categoryID || j}><Link to={"/lista-videos/"  + section.sectionURL + "/"+  category.categoryInformation.categoryURL }><i className={category.iconName} style={{ "margin-right": 5 }} ></i>{category.name}</Link></li>
                                       : ''
                                   )) : <div className="text-center"><Spinner animation="border" className="text-white" /></div>
                                 }

@@ -1,14 +1,14 @@
 export const SectionTypes = [
     {
-        name: 'Curso',
+        name: 'Cursos',
         nameID: 'cursos-123'
     },
     {
-        name: 'Articulo',
+        name: 'Articulos',
         nameID: 'articulos-123'
     },
     {
-        name: 'Conferencia',
+        name: 'Conferencias',
         nameID: 'conferencias-123'
     },
     {
